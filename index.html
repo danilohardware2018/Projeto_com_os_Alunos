@@ -32,15 +32,17 @@
         <img src="./assets/images/peperone.jpg" alt="pizza_peperone" />
         <h2>Pepperoni</h2>
         <p>Descrição: Mussarela e pepperoni.</p>
-        <p>R$ 71,90</p>
+        <p >R$ <p id="preco-pepperoni">71,90</p></p>
         <div class="quantidade">
-          <button onclick="decrementIncrement('qtd-peperoni', 'minus')">
+          <button onclick="decrementIncrement('qtd-peperoni', 'minus', 'preco-pepperoni', 'total-peperoni')">
             -
           </button>
-          <button onclick="decrementIncrement('qtd-peperoni', 'plus')">
+          <button onclick="decrementIncrement('qtd-peperoni', 'plus', 'preco-pepperoni', 'total-peperoni')">
             +
           </button>
           <p id="qtd-peperoni">0</p>
+          <p >Total<p id="total-peperoni">0</p></p>
+
         </div>
       </div>
       <div class="pizza" id="portuguesa">
@@ -93,7 +95,7 @@
       </div>
 
       <div class="btn-buy">
-        <button onclick="shoppingKart()">Ir para o carrinho</button>
+        <button onclick="shoppingKart()"><strong>Ir para o carrinho</strong></button>
       </div>
     </main>
     <footer>
