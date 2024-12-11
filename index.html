@@ -15,16 +15,18 @@
         <img src="./assets/images/marguerita.jpg" alt="pizza_marguerita" />
         <h2>Margherita</h2>
         <p>Descrição: Tomate, mussarela e manjericão.</p>
-        <p>R$ 63,90</p>
+        <p>R$ <span id="preco-margherita">63.90</span></p>
 
         <div class="quantidade">
-          <button onclick="decrementIncrement('qtd-marguerita', 'minus')">
+          <button onclick="decrementIncrement('qtd-margherita', 'minus', 'preco-margherita', 'total-margherita')">
             -
           </button>
-          <button onclick="decrementIncrement('qtd-marguerita', 'plus')">
+          <button onclick="decrementIncrement('qtd-margherita', 'plus', 'preco-margherita', 'total-margherita')">
             +
           </button>
-          <p id="qtd-marguerita">0</p>
+          <p id="qtd-margherita">0</p>
+          <p >Total<p id="total-margherita">0</p></p>
+
         </div>
       </div>
 
@@ -32,15 +34,17 @@
         <img src="./assets/images/peperone.jpg" alt="pizza_peperone" />
         <h2>Pepperoni</h2>
         <p>Descrição: Mussarela e pepperoni.</p>
-        <p>R$ 71,90</p>
+        <p >R$ <p id="preco-pepperoni">71,90</p></p>
         <div class="quantidade">
-          <button onclick="decrementIncrement('qtd-peperoni', 'minus')">
+          <button onclick="decrementIncrement('qtd-peperoni', 'minus', 'preco-pepperoni', 'total-peperoni')">
             -
           </button>
-          <button onclick="decrementIncrement('qtd-peperoni', 'plus')">
+          <button onclick="decrementIncrement('qtd-peperoni', 'plus', 'preco-pepperoni', 'total-peperoni')">
             +
           </button>
           <p id="qtd-peperoni">0</p>
+          <p >Total<p id="total-peperoni">0</p></p>
+
         </div>
       </div>
       <div class="pizza" id="portuguesa">
@@ -49,15 +53,17 @@
         <p>
           Descrição: Mussarela, presunto, ovo, cebola, azeitonas e pimentão.
         </p>
-        <p>R$ 62,90</p>
+        <p>R$ <span id="preco-portuguesa">62.90</span></p>
         <div class="quantidade">
-          <button onclick="decrementIncrement('qtd-portuguesa', 'minus')">
+          <button onclick="decrementIncrement('qtd-portuguesa', 'minus', 'preco-portuguesa', 'total-portuguesa')">
             -
           </button>
-          <button onclick="decrementIncrement('qtd-portuguesa', 'plus')">
+          <button onclick="decrementIncrement('qtd-portuguesa', 'plus', 'preco-portuguesa', 'total-portuguesa')">
             +
           </button>
           <p id="qtd-portuguesa">0</p>
+          <p >Total<p id="total-portuguesa">0</p></p>
+
         </div>
       </div>
       <div class="pizza" id="quatro-queijos">
@@ -67,37 +73,43 @@
         />
         <h2>Quatro Queijos</h2>
         <p>Descrição: Mussarela, gorgonzola, parmesão e provolone.</p>
-        <p>R$ 55,90</p>
+        <p>R$<span id="preco-queijos">55.90</span></p>
         <div class="quantidade">
-          <button onclick="decrementIncrement('qtd-queijos', 'minus')">
+          <button onclick="decrementIncrement('qtd-queijos', 'minus', 'preco-queijos', 'total-queijos')">
             -
           </button>
-          <button onclick="decrementIncrement('qtd-queijos', 'plus')">+</button>
+          <button onclick="decrementIncrement('qtd-queijos', 'plus', 'preco-queijos', 'total-queijos')">
+            +
+          </button>
           <p id="qtd-queijos">0</p>
+          <p >Total<p id="total-queijos">0</p></p>
+
         </div>
       </div>
       <div class="pizza" id="calabresa">
         <img src="./assets/images/pizza_calabresa.png" alt="pizza_calabresa" />
         <h2>Calabresa</h2>
         <p>Descrição: Mussarela, calabresa e cebola.</p>
-        <p>R$ 49,90</p>
+        <p>R$<span id="preco-calabresa">49.90</span></p>
         <div class="quantidade">
-          <button onclick="decrementIncrement('qtd-calabresa', 'minus')">
+          <button onclick="decrementIncrement('qtd-calabresa', 'minus', 'preco-calabresa', 'total-calabresa')">
             -
           </button>
-          <button onclick="decrementIncrement('qtd-calabresa', 'plus')">
+          <button onclick="decrementIncrement('qtd-calabresa', 'plus', 'preco-calabresa', 'total-calabresa')">
             +
           </button>
           <p id="qtd-calabresa">0</p>
+          <p >Total<p id="total-calabresa">0</p></p>
+
         </div>
       </div>
 
       <div class="btn-buy">
-        <button onclick="shoppingKart()">Ir para o carrinho</button>
+        <button onclick="shoppingKart()"><strong>Ir para o carrinho</strong></button>
       </div>
     </main>
     <footer>
-      <p>&copy; 2023 Pizza Delivery. Todos os direitos reservados.</p>
+      <p><strong>&copy; 2023 Pizza Delivery. Todos os direitos reservados.</strong></p>
     </footer>
     <script src="index.js"></script>
   </body>
