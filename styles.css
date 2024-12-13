@@ -1,71 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #ff6347;
-    color: white;
-    padding: 15px;
-    text-align: center;
+  background-color: #ff6347;
+  color: white;
+  padding: 15px;
+  text-align: center;
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+#shopping-kart {
+  background-color: white;
+  border: 5px solid #ddd;
+  border-radius: 10px;
+  margin: 15px auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .pizza {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .pizza h2 {
-    color: #333;
+  color: #333;
 }
 
 .pizza p {
-    color: #666;
+  color: #666;
 }
 
 button {
-    background-color: #ff6347;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #ff6347;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 img {
-    height: 180px;
-    width: 200px;
+  height: 180px;
+  width: 200px;
+}
+
+.btn-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0 20px;
 }
 
 footer {
-    text-align: center;
-    justify-content: baseline;
-    height: 20vh;
-    background-color: #ff6347;
-    padding: 50px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 35px;
-    
+  display: flex;
+  justify-content: center;
+  background-color: #ff6347;
+  font-size: 20px;
+  margin-top: 10px;
 }
